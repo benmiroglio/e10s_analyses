@@ -1,5 +1,11 @@
 *~
 .DS_Store
+derby.log
 
 # IPython notebook checkpoints
 .ipynb_checkpoints
+
+# data
+*.csv
+*.txt
+
