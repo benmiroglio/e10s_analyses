@@ -1,9 +1,9 @@
-*~
-.DS_Store
+
+*.DS_Store
 *.log
 
 # IPython notebook checkpoints
-.ipynb_checkpoints
+*.ipynb_checkpoint*
 
 # data
 *.csv
