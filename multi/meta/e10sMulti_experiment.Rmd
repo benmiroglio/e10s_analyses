@@ -1,0 +1,492 @@
+---
+title: "Multi / WebExtensions Telemetry Performance"
+output: 
+  html_document:
+  theme: cosmo
+---
+
+
+
+
+
+
+
+# Results {.tabset .tabset-fade }
+
+
+## week3 {.tabset .tabset-fade }
+
+The data shows the following concerns based on histogram comparisons:
+
+```{r, echo=FALSE}
+#htmltools::includeHTML('./week3/html/concerns.html')
+```
+
+<br>
+
+### Dataset Summary
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/summary.html')
+```
+  
+### Probes {.tabset .tabset-fade}
+
+#### Jank {.tabset .tabset-fade .tabset-pills}
+
+##### GC_MAX_PAUSE_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/GC_MAX_PAUSE_MS.html')
+```
+
+##### CYCLE_COLLECTOR_MAX_PAUSE
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/CYCLE_COLLECTOR_MAX_PAUSE.html')
+```
+
+##### INPUT_EVENT_RESPONSE_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/INPUT_EVENT_RESPONSE_MS.html')
+```
+
+#### Tab Switching {.tabset .tabset-fade .tabset-pills}
+
+##### FX_PAGE_LOAD_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/FX_PAGE_LOAD_MS.html')
+```
+
+
+##### FX_TAB_REMOTE_NAVIGATION_DELAY_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/FX_TAB_REMOTE_NAVIGATION_DELAY_MS.html')
+```
+
+##### FX_TAB_SWITCH_SPINNER_VISIBLE_LONG_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/FX_TAB_SWITCH_SPINNER_VISIBLE_LONG_MS.html')
+```
+
+##### FX_TAB_SWITCH_SPINNER_VISIBLE_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/FX_TAB_SWITCH_SPINNER_VISIBLE_MS.html')
+```
+
+##### FX_TAB_SWITCH_TOTAL_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/FX_TAB_SWITCH_TOTAL_MS.html')
+```
+
+##### FX_TAB_SWITCH_UPDATE_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/FX_TAB_SWITCH_UPDATE_MS.html')
+```
+
+#### Memory Usage {.tabset .tabset-fade .tabset-pills}
+
+##### MEMORY_DISTRIBUTION_AMONG_CONTENT
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/MEMORY_DISTRIBUTION_AMONG_CONTENT.html')
+```
+
+##### MEMORY_TOTAL
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/MEMORY_TOTAL.html')
+```
+
+##### MEMORY_VSIZE_MAX_CONTIGUOUS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/MEMORY_VSIZE_MAX_CONTIGUOUS.html')
+```
+
+#### Slow Scripts {.tabset .tabset-fade .tabset-pills}
+
+##### SLOW_SCRIPT_NOTICE_COUNT
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/SLOW_SCRIPT_NOTICE_COUNT.html')
+```
+
+##### SLOW_SCRIPT_PAGE_COUNT
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/SLOW_SCRIPT_PAGE_COUNT.html')
+```
+
+##### SLOW_SCRIPT_NOTIFY_DELAY
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/SLOW_SCRIPT_NOTIFY_DELAY.html')
+```
+
+
+### Stacks {.tabset .tabset-fade .tabset-pills}
+
+<br>
+
+Here we look for major stack differences between cohorts. The stacks are sorted by frequency in the left most column which corresponds to the selected tab. For example, in the `webextensions-multiBucket1` tab, the left most column are the top 25 most occuring stacks in that cohort. The percentages for the other cohorts are included for comparison. For each row, if a cell in the left most column is noticeably darker than cells to its right, then that cohort may have a hangs issue. 
+
+<br>
+
+
+#### webextensions-multiBucket1
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/wm1.html')
+```
+
+#### webextensions-multiBucket4
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/wm4.html')
+```
+
+#### MultiBucket1
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/m1.html')
+```
+
+
+#### MultiBucket4
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/m4.html')
+```
+
+
+#### MPC-1
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/mpc1.html')
+```
+
+#### MPC-4
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./week3/html/mpc4.html')
+```
+
+
+
+
+
+
+## week2 {.tabset .tabset-fade }
+
+The data shows the following concerns based on histogram comparisons:
+
+```{r, echo=FALSE}
+#htmltools::includeHTML('./data/week2/concerns.html')
+```
+
+<br>
+
+### Dataset Summary
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/summary.html')
+```
+  
+### Probes {.tabset .tabset-fade}
+
+#### Jank {.tabset .tabset-fade .tabset-pills}
+
+##### GC_MAX_PAUSE_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/GC_MAX_PAUSE_MS.html')
+```
+
+##### CYCLE_COLLECTOR_MAX_PAUSE
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/CYCLE_COLLECTOR_MAX_PAUSE.html')
+```
+
+##### INPUT_EVENT_RESPONSE_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/INPUT_EVENT_RESPONSE_MS.html')
+```
+
+#### Tab Switching {.tabset .tabset-fade .tabset-pills}
+
+##### FX_PAGE_LOAD_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/FX_PAGE_LOAD_MS.html')
+```
+
+
+##### FX_TAB_REMOTE_NAVIGATION_DELAY_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/FX_TAB_REMOTE_NAVIGATION_DELAY_MS.html')
+```
+
+##### FX_TAB_SWITCH_SPINNER_VISIBLE_LONG_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/FX_TAB_SWITCH_SPINNER_VISIBLE_LONG_MS.html')
+```
+
+##### FX_TAB_SWITCH_SPINNER_VISIBLE_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/FX_TAB_SWITCH_SPINNER_VISIBLE_MS.html')
+```
+
+##### FX_TAB_SWITCH_TOTAL_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/FX_TAB_SWITCH_TOTAL_MS.html')
+```
+
+##### FX_TAB_SWITCH_UPDATE_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/FX_TAB_SWITCH_UPDATE_MS.html')
+```
+
+#### Memory Usage {.tabset .tabset-fade .tabset-pills}
+
+##### MEMORY_DISTRIBUTION_AMONG_CONTENT
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/MEMORY_DISTRIBUTION_AMONG_CONTENT.html')
+```
+
+##### MEMORY_TOTAL
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/MEMORY_TOTAL.html')
+```
+
+##### MEMORY_VSIZE_MAX_CONTIGUOUS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/MEMORY_VSIZE_MAX_CONTIGUOUS.html')
+```
+
+#### Slow Scripts {.tabset .tabset-fade .tabset-pills}
+
+##### SLOW_SCRIPT_NOTICE_COUNT
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/SLOW_SCRIPT_NOTICE_COUNT.html')
+```
+
+##### SLOW_SCRIPT_PAGE_COUNT
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/SLOW_SCRIPT_PAGE_COUNT.html')
+```
+
+##### SLOW_SCRIPT_NOTIFY_DELAY
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/SLOW_SCRIPT_NOTIFY_DELAY.html')
+```
+
+
+### Stacks {.tabset .tabset-fade .tabset-pills}
+
+<br>
+
+Here we look for major stack differences between cohorts. The stacks are sorted by frequency in the left most column which corresponds to the selected tab. For example, in the `webextensions-multiBucket1` tab, the left most column are the top 25 most occuring stacks in that cohort. The percentages for the other cohorts are included for comparison. For each row, if a cell in the left most column is noticeably darker than cells to its right, then that cohort may have a hangs issue. 
+
+<br>
+
+
+#### webextensions-multiBucket1
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/wm1.html')
+```
+
+#### webextensions-multiBucket4
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/wm4.html')
+```
+
+#### MultiBucket1
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/m1.html')
+```
+
+
+#### MultiBucket4
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week2/m4.html')
+```
+
+
+
+
+# Results {.tabset .tabset-fade }
+
+
+## week1 {.tabset .tabset-fade }
+
+The data shows the following concerns based on histogram comparisons:
+
+```{r, echo=FALSE}
+#htmltools::includeHTML('./data/week1/concerns.html')
+```
+
+<br>
+
+### Dataset Summary
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/summary.html')
+```
+  
+### Probes {.tabset .tabset-fade}
+
+#### Jank {.tabset .tabset-fade .tabset-pills}
+
+##### GC_MAX_PAUSE_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/GC_MAX_PAUSE_MS.html')
+```
+
+##### CYCLE_COLLECTOR_MAX_PAUSE
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/CYCLE_COLLECTOR_MAX_PAUSE.html')
+```
+
+##### INPUT_EVENT_RESPONSE_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/INPUT_EVENT_RESPONSE_MS.html')
+```
+
+#### Tab Switching {.tabset .tabset-fade .tabset-pills}
+
+##### FX_PAGE_LOAD_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/FX_PAGE_LOAD_MS.html')
+```
+
+
+##### FX_TAB_REMOTE_NAVIGATION_DELAY_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/FX_TAB_REMOTE_NAVIGATION_DELAY_MS.html')
+```
+
+##### FX_TAB_SWITCH_SPINNER_VISIBLE_LONG_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/FX_TAB_SWITCH_SPINNER_VISIBLE_LONG_MS.html')
+```
+
+##### FX_TAB_SWITCH_SPINNER_VISIBLE_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/FX_TAB_SWITCH_SPINNER_VISIBLE_MS.html')
+```
+
+##### FX_TAB_SWITCH_TOTAL_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/FX_TAB_SWITCH_TOTAL_MS.html')
+```
+
+##### FX_TAB_SWITCH_UPDATE_MS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/FX_TAB_SWITCH_UPDATE_MS.html')
+```
+
+#### Memory Usage {.tabset .tabset-fade .tabset-pills}
+
+##### MEMORY_DISTRIBUTION_AMONG_CONTENT
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/MEMORY_DISTRIBUTION_AMONG_CONTENT.html')
+```
+
+##### MEMORY_TOTAL
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/MEMORY_TOTAL.html')
+```
+
+##### MEMORY_VSIZE_MAX_CONTIGUOUS
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/MEMORY_VSIZE_MAX_CONTIGUOUS.html')
+```
+
+#### Slow Scripts {.tabset .tabset-fade .tabset-pills}
+
+##### SLOW_SCRIPT_NOTICE_COUNT
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/SLOW_SCRIPT_NOTICE_COUNT.html')
+```
+
+##### SLOW_SCRIPT_PAGE_COUNT
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/SLOW_SCRIPT_PAGE_COUNT.html')
+```
+
+##### SLOW_SCRIPT_NOTIFY_DELAY
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/SLOW_SCRIPT_NOTIFY_DELAY.html')
+```
+
+
+### Stacks {.tabset .tabset-fade .tabset-pills}
+
+<br>
+
+Here we look for major stack differences between cohorts. The stacks are sorted by frequency in the left most column which corresponds to the selected tab. For example, in the `webextensions-multiBucket1` tab, the left most column are the top 25 most occuring stacks in that cohort. The percentages for the other cohorts are included for comparison. For each row, if a cell in the left most column is noticeably darker than cells to its right, then that cohort may have a hangs issue. 
+
+<br>
+
+
+#### webextensions-multiBucket1
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/wm1.html')
+```
+
+#### webextensions-multiBucket4
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/wm4.html')
+```
+
+#### MultiBucket1
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/m1.html')
+```
+
+
+#### MultiBucket4
+
+```{r, echo=FALSE}
+htmltools::includeHTML('./data/week1/m4.html')
+```
